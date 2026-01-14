@@ -1,11 +1,10 @@
-services:
-  # PostgreSQL Database
-  - type: pserv
-    name: meditutor-db
-    plan: free
+databases:
+  - name: meditutor-db
     databaseName: meditutor
-    databaseUser: meditutor
+    user: meditutor
+    plan: free
 
+services:
   # Backend API
   - type: web
     name: meditutor-backend
